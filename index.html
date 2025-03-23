@@ -33,19 +33,23 @@
 
     <section id="goals">
         <h2>My Life Goals</h2>
-        <ul>
-            <li>Goal 1: Become a successful electrical inspector</li>
-            <li>Goal 2: Build a family home and farm</li>
-            <li>Goal 3: Develop a strong career in Japan</li>
+        <ul id="goalList">
+            <!-- Goals will appear here -->
         </ul>
+        
+        <!-- Form to add new goal -->
+        <h3>Add a New Goal</h3>
+        <form id="goalForm">
+            <input type="text" id="goalName" placeholder="Enter your goal" required>
+            <input type="number" id="goalProgress" placeholder="Progress (0-100)" min="0" max="100" required>
+            <button type="submit">Add Goal</button>
+        </form>
     </section>
 
     <section id="progress">
         <h2>Goal Progress</h2>
         <div id="progressBar">
-            <label for="goal1">Goal 1: Become a successful electrical inspector</label>
-            <progress id="goal1" value="50" max="100"></progress>
-            <p>50% completed</p>
+            <!-- Progress bars for each goal will be shown here -->
         </div>
     </section>
 
